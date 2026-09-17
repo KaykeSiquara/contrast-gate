@@ -1,0 +1,57 @@
+{
+  "level": "AA",
+  "requireInGamut": true,
+  "themes": {
+    "dark": {
+      "bg": "oklch(0.190 0.022 266)",
+      "surface": "oklch(0.240 0.024 266)",
+      "surface-2": "oklch(0.290 0.024 266)",
+      "ink": "oklch(0.955 0.010 85)",
+      "ink-2": "oklch(0.790 0.014 85)",
+      "ink-3": "oklch(0.680 0.016 85)",
+      "border": "oklch(0.530 0.022 266)",
+      "accent": "oklch(0.800 0.130 62)",
+      "on-accent": "oklch(0.220 0.045 62)",
+      "placeholder": "oklch(0.640 0.014 85)",
+      "paid": "oklch(0.760 0.150 152)",
+      "pending": "oklch(0.800 0.115 56)",
+      "rejected": "oklch(0.720 0.150 20)",
+      "selection": "oklch(0.760 0.110 248)"
+    },
+    "light": {
+      "bg": "oklch(0.975 0.006 85)",
+      "surface": "oklch(1 0 0)",
+      "surface-2": "oklch(0.945 0.010 85)",
+      "ink": "oklch(0.235 0.026 266)",
+      "ink-2": "oklch(0.450 0.020 266)",
+      "ink-3": "oklch(0.535 0.018 266)",
+      "border": "oklch(0.615 0.016 266)",
+      "accent": "oklch(0.480 0.110 52)",
+      "on-accent": "oklch(0.985 0.008 62)",
+      "placeholder": "oklch(0.555 0.016 266)",
+      "paid": "oklch(0.470 0.110 152)",
+      "pending": "oklch(0.505 0.115 56)",
+      "rejected": "oklch(0.505 0.170 20)",
+      "selection": "oklch(0.480 0.110 248)"
+    }
+  },
+  "pairs": [
+    { "name": "body text on page", "fg": "ink", "bg": "bg" },
+    { "name": "body text on card", "fg": "ink", "bg": "surface" },
+    { "name": "secondary text on page", "fg": "ink-2", "bg": "bg" },
+    { "name": "secondary text on card", "fg": "ink-2", "bg": "surface" },
+    { "name": "help text on page", "fg": "ink-3", "bg": "bg" },
+    { "name": "help text on card", "fg": "ink-3", "bg": "surface" },
+    { "name": "placeholder in field", "fg": "placeholder", "bg": "surface" },
+    { "name": "accent on page", "fg": "accent", "bg": "bg" },
+    { "name": "accent on card", "fg": "accent", "bg": "surface" },
+    { "name": "button label on accent", "fg": "on-accent", "bg": "accent" },
+    { "name": "status paid", "fg": "paid", "bg": "surface" },
+    { "name": "status pending", "fg": "pending", "bg": "surface" },
+    { "name": "status rejected", "fg": "rejected", "bg": "surface" },
+    { "name": "selected row", "fg": "selection", "bg": "surface" },
+    { "name": "control border on page", "fg": "border", "bg": "bg", "size": "nonText" },
+    { "name": "control border on card", "fg": "border", "bg": "surface", "size": "nonText" },
+    { "name": "accent on raised surface", "fg": "accent", "bg": "surface-2", "size": "nonText" }
+  ]
+}

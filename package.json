@@ -1,0 +1,56 @@
+{
+  "name": "@kaykesiquara/contrast-gate",
+  "version": "1.0.0",
+  "description": "Dependency-free WCAG 2.1 contrast gate for design tokens. sRGB, OKLab and OKLCh. Fails the build when a documented colour pair drops below its minimum.",
+  "keywords": [
+    "wcag",
+    "accessibility",
+    "a11y",
+    "contrast",
+    "oklch",
+    "oklab",
+    "design-tokens",
+    "ci",
+    "build-gate"
+  ],
+  "license": "MIT",
+  "author": "Kayke Siquara Mendonça",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaykeSiquara/contrast-gate.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "bin": {
+    "contrast-gate": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test \"dist/**/*.test.js\"",
+    "gate": "npm run build && node dist/cli.js contrast.config.json",
+    "prepublishOnly": "npm test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^22.7.0",
+    "typescript": "^5.6.0"
+  }
+}

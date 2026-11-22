@@ -25,8 +25,11 @@ not for trusting the eye.
 ## Install
 
 ```sh
-npm install --save-dev @kaykesiquara/contrast-gate
+npm install --save-dev github:KaykeSiquara/contrast-gate
 ```
+
+Not on the npm registry yet: this installs straight from GitHub and builds on
+install. The package name stays `@kaykesiquara/contrast-gate`.
 
 Node 20 or newer. No dependencies, runtime or otherwise, beyond TypeScript for
 building from source.
